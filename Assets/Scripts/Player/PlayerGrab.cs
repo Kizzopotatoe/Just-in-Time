@@ -18,12 +18,6 @@ public class PlayerGrab : MonoBehaviour
 
             currentlyHolding++;
         }
-
-        //If the player collides with a minion, it will be destroyed
-        if (collision.gameObject.CompareTag("Minion"))
-        {
-            Destroy(collision.gameObject);
-        }
     }
     
     private void OnTriggerEnter(Collider other)

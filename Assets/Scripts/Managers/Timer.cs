@@ -5,10 +5,11 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float timeRemaining = 5f;
     [SerializeField] private TextMeshProUGUI timerText;
+    private bool timeSlowed;
 
     private void Update()
     {
-        if(timeRemaining > 0)
+        if(timeRemaining > 0 && timeSlowed == false)
         {
             timeRemaining -= Time.deltaTime;
 
@@ -22,10 +23,19 @@ public class Timer : MonoBehaviour
             }
         
         }
-        else // Time has run out
+        if(timeRemaining > 0 && timeSlowed == true)
         {
-            timeRemaining = 0;
-            timerText.text = "0";
+            timeRemaining -= Time.deltaTime / 3;
+
+            if(timeRemaining >= 60)
+            {
+                ShowMinutesAndSeconds(); // Shows the timer in a minutes and seconds format
+            }
+            else
+            {
+                ShowSecondsOnly(); // Changes the format to be seconds only
+            }
+        
         }
     }
 
@@ -40,5 +50,14 @@ public class Timer : MonoBehaviour
     private void ShowSecondsOnly()
     {
         timerText.text = timeRemaining.ToString("0.0");
+    }
+
+    public void TimeSlow()
+    {
+        timeSlowed = true;
+    }
+    public void TimeUnslow()
+    {
+        timeSlowed = false;
     }
 }
