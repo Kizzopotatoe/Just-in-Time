@@ -11,6 +11,7 @@ public class EnemyNavigation : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = 3.1f;
     }
 
     // Update is called once per frame
@@ -26,5 +27,14 @@ public class EnemyNavigation : MonoBehaviour
             Destroy(target.gameObject);
             Destroy(this.gameObject);
         }
+    }
+
+    public void TimeSlow()
+    {
+        agent.speed = 1.1f;
+    }
+    public void TimeUnslow()
+    {
+        agent.speed = 3.1f;
     }
 }

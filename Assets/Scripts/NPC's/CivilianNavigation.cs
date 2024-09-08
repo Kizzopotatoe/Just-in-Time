@@ -15,6 +15,7 @@ public class CivilianNavigation : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = 3f;
 
         targetWaypoint = waypoints[0];
     }
@@ -41,5 +42,14 @@ public class CivilianNavigation : MonoBehaviour
         }
 
         return waypoints[currentWaypointIndex];
+    }
+
+    public void TimeSlow()
+    {
+        agent.speed = 1f;
+    }
+    public void TimeUnslow()
+    {
+        agent.speed = 3f;
     }
 }
