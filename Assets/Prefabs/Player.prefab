@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 3429649889431305033}
   - component: {fileID: 3732484526209611}
   - component: {fileID: 2544496086412823868}
+  - component: {fileID: 4353834273598037997}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -201,6 +202,21 @@ MonoBehaviour:
   heldCivilians:
   - {fileID: 1690274940385713041}
   - {fileID: 5182627143866639717}
+--- !u!114 &4353834273598037997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2850440272439783180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a820322f746ddb7459533f74dac60fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeSlowed: 0
+  slowed: {fileID: 11400000, guid: ffac7dba92c695a48ab18cd2197c9f93, type: 2}
+  unslowed: {fileID: 11400000, guid: 0d9f668cea1189f49a9cd3eb54714792, type: 2}
 --- !u!1 &2854977089420182794
 GameObject:
   m_ObjectHideFlags: 0
