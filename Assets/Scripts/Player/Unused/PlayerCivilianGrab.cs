@@ -43,6 +43,8 @@ public class PlayerCivilianGrab : MonoBehaviour
 
                 collision.collider.isTrigger = true;
 
+                collision.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+
                 // Mark the shoulder as occupied
                 shouldersOccupied[availableShoulderIndex] = true;
             }

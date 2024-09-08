@@ -425,7 +425,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1156425460150508222}
   - component: {fileID: 2141289464430626840}
-  - component: {fileID: 8383945485815596707}
   m_Layer: 0
   m_Name: CarDropPoint
   m_TagString: DropPoint
@@ -468,20 +467,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.227884, y: 2.2562146, z: 2.9343657}
-  m_Center: {x: -0.26727843, y: 0.6281073, z: -1.1975391}
---- !u!114 &8383945485815596707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263018185986952274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbccb27b686bb2449adbf8bb010c99b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Size: {x: 4.227884, y: 2.2562146, z: 1.9073458}
+  m_Center: {x: -0.26727843, y: 0.6281073, z: -2.1381721}
 --- !u!1 &8941047100050735798
 GameObject:
   m_ObjectHideFlags: 0

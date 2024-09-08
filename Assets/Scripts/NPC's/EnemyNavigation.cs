@@ -16,6 +16,8 @@ public class EnemyNavigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(target == null) return;
+
         agent.destination = target.position;
 
         if(Vector3.Distance(transform.position, target.position) < checkDistance)
