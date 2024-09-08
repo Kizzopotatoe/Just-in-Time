@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Civilian
   - DropPoint
+  - Minion
   layers:
   - Default
   - TransparentFX

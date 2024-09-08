@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerCivilianGrab : MonoBehaviour
 {
@@ -34,13 +36,11 @@ public class PlayerCivilianGrab : MonoBehaviour
             // If there is an available shoulder, attach the civilian
             if (availableShoulderIndex != -1)
             {
-
                 Transform availableShoulder = shoulders[availableShoulderIndex];
 
                 collision.transform.position = availableShoulder.position;
                 collision.transform.parent = transform;
 
-                collision.rigidbody.isKinematic = true;
                 collision.collider.isTrigger = true;
 
                 // Mark the shoulder as occupied
@@ -50,6 +50,11 @@ public class PlayerCivilianGrab : MonoBehaviour
             {
                 Debug.Log("Both shoulders are taken");
             }
+        }
+
+        if (collision.gameObject.CompareTag("Minion"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 
