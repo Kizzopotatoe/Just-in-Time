@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float rotateSpeed = 10f;
 
     private Rigidbody myRigidbody;
     private Vector3 velocity;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = inputVector.normalized;
         velocity = direction * moveSpeed;
 
+        transform.forward = Vector3.Slerp(transform.forward, direction, Time.deltaTime * rotateSpeed);
     }
 
     private void FixedUpdate()
