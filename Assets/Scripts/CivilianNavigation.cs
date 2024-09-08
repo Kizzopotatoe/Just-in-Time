@@ -6,7 +6,7 @@ public class CivilianNavigation : MonoBehaviour
     private NavMeshAgent agent;
 
     [SerializeField] private Transform[] waypoints;
-    [SerializeField] private float checkDistance = 0.05f;
+    [SerializeField] private float checkDistance = 0.5f;
 
     [SerializeField] private Transform targetWaypoint;
     private int currentWaypointIndex = 0;
