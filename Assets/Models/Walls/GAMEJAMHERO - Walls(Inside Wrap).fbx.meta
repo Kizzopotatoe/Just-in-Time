@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ef852df243e6374ebb83cda2cfb21f8
+guid: 057bae3fdf49f7049b8d6cbbaaf3804a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Test Wall
-    second: {fileID: 2100000, guid: 1e7489d11d3e5d647bf5fb14685e25ea, type: 2}
+    second: {fileID: 2100000, guid: 9be31bc9e1e2d874892f61d0d878ca17, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Test Wall
-    second: {fileID: 2800000, guid: a9685aea35f5118498b87a6f1d2a3dba, type: 3}
+    second: {fileID: 2800000, guid: d893aa7cf12eb124bb28b9443a84f015, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
