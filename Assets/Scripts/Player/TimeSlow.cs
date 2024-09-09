@@ -13,8 +13,6 @@ public class TimeSlow : MonoBehaviour
     [SerializeField] private TextMeshProUGUI slowText;
     [SerializeField] private GameObject slowMoEffect;
     public Slider slider;
-    public AudioSource source;
-    public AudioClip clip;
     
     [Header("Events")]
     public GameEvent slowed;
@@ -41,9 +39,6 @@ public class TimeSlow : MonoBehaviour
             slowed.Raise();
             timeSlowed = true;
             slowMoEffect.SetActive(true);
-            
-            source.pitch = 1f;
-            source.PlayOneShot(clip);
 
             Debug.Log("Time Slowed");
         }
@@ -60,9 +55,6 @@ public class TimeSlow : MonoBehaviour
             unslowed.Raise();
             timeSlowed = false;
             slowMoEffect.SetActive(false);
-
-            source.pitch = -1f;
-            source.PlayOneShot(clip);
 
             Debug.Log("Time Unslowed");
         }
