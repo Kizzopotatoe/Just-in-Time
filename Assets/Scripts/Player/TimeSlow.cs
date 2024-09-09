@@ -4,14 +4,19 @@ using UnityEngine.UI;
 
 public class TimeSlow : MonoBehaviour
 {
+    [Header("Variables")]
     public float maxSlowTimer = 10f;
     [SerializeField] private float slowTimer;
+    public bool timeSlowed;
+
+    [Header("References")]
     [SerializeField] private TextMeshProUGUI slowText;
     [SerializeField] private GameObject slowMoEffect;
     public Slider slider;
-    public bool timeSlowed;
-
-    //Reference to game events
+    public AudioSource source;
+    public AudioClip clip;
+    
+    [Header("Events")]
     public GameEvent slowed;
     public GameEvent unslowed;
 
@@ -36,6 +41,9 @@ public class TimeSlow : MonoBehaviour
             slowed.Raise();
             timeSlowed = true;
             slowMoEffect.SetActive(true);
+            
+            source.pitch = 1f;
+            source.PlayOneShot(clip);
 
             Debug.Log("Time Slowed");
         }
@@ -52,6 +60,9 @@ public class TimeSlow : MonoBehaviour
             unslowed.Raise();
             timeSlowed = false;
             slowMoEffect.SetActive(false);
+
+            source.pitch = -1f;
+            source.PlayOneShot(clip);
 
             Debug.Log("Time Unslowed");
         }
