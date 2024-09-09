@@ -37,6 +37,10 @@ public class Timer : MonoBehaviour
             }
         
         }
+        if(timeRemaining <= 0)
+        {
+            LevelFailed();
+        }
     }
 
     private void ShowMinutesAndSeconds()
@@ -50,6 +54,12 @@ public class Timer : MonoBehaviour
     private void ShowSecondsOnly()
     {
         timerText.text = timeRemaining.ToString("0.0");
+    }
+
+    void LevelFailed()
+    {
+        GameManager.instance.levelFailedMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void TimeSlow()
