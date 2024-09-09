@@ -1,14 +1,23 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] private float timeRemaining = 5f;
     [SerializeField] private TextMeshProUGUI timerText;
+    public Slider slider;
     private bool timeSlowed;
+
+    private void Start()
+    {
+        slider.maxValue = timeRemaining;
+    }
 
     private void Update()
     {
+        slider.value = timeRemaining;
+
         if(timeRemaining > 0 && timeSlowed == false)
         {
             timeRemaining -= Time.deltaTime;

@@ -1,11 +1,14 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimeSlow : MonoBehaviour
 {
-    [SerializeField] private float slowTimer = 5f;
+    public float maxSlowTimer = 10f;
+    [SerializeField] private float slowTimer;
     [SerializeField] private TextMeshProUGUI slowText;
     [SerializeField] private GameObject slowMoEffect;
+    public Slider slider;
     public bool timeSlowed;
 
     //Reference to game events
@@ -15,6 +18,9 @@ public class TimeSlow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        slowTimer = 5;
+        slider.maxValue = maxSlowTimer;
+
         timeSlowed = false;
     }
 
@@ -22,6 +28,7 @@ public class TimeSlow : MonoBehaviour
     void Update()
     {
         slowText.text = slowTimer.ToString("0.0");
+        slider.value = slowTimer;
 
         //If the player holds shift, the time slow event will be raised
         if(Input.GetKeyDown(KeyCode.LeftShift) && timeSlowed == false && slowTimer > 0)
@@ -57,6 +64,11 @@ public class TimeSlow : MonoBehaviour
         {
             Destroy(collision.gameObject);
             slowTimer += 5f;
+
+            if(slowTimer >= maxSlowTimer)
+            {
+                slowTimer = maxSlowTimer;
+            }
         }
     }
 }
