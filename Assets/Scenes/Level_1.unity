@@ -244,7 +244,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: cc85d8d915ac52047840b1813ab0a5e7, type: 3}
 --- !u!4 &40501991 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8871199387345972965, guid: cc85d8d915ac52047840b1813ab0a5e7,
+  m_CorrespondingSourceObject: {fileID: 8331966029175313028, guid: cc85d8d915ac52047840b1813ab0a5e7,
     type: 3}
   m_PrefabInstance: {fileID: 40501990}
   m_PrefabAsset: {fileID: 0}
@@ -7290,7 +7290,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 40501991}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
