@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
+
         if(instance == null)
         {
             instance = this;
@@ -17,5 +20,34 @@ public class GameManager : MonoBehaviour
         { 
             Destroy(gameObject);
         }
+    }
+
+    public void NextLevel()
+    {
+        // Get the active scenes build index
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Check if there is a next scene available
+        if (currentSceneIndex < SceneManager.sceneCountInBuildSettings - 1)
+        {
+            // Load the next scene 
+            SceneManager.LoadScene(currentSceneIndex += 1);
+        }
+        else
+        {
+            // Reload the current scene
+            SceneManager.LoadScene(currentSceneIndex);
+
+            Debug.Log("No new scene to reload");
+        }
+    }
+
+    public void RetryLevel()
+    {
+        // Get the active scenes build index
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Reload the current scene
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
