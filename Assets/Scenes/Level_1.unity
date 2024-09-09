@@ -187,6 +187,21 @@ PrefabInstance:
       propertyPath: slowMoEffect
       value: 
       objectReference: {fileID: 2071144034}
+    - target: {fileID: 8324716718709007383, guid: cc85d8d915ac52047840b1813ab0a5e7,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 613372148}
+    - target: {fileID: 8324716718709007383, guid: cc85d8d915ac52047840b1813ab0a5e7,
+        type: 3}
+      propertyPath: slowText
+      value: 
+      objectReference: {fileID: 1540223391}
+    - target: {fileID: 8324716718709007383, guid: cc85d8d915ac52047840b1813ab0a5e7,
+        type: 3}
+      propertyPath: slowMoEffect
+      value: 
+      objectReference: {fileID: 2071144034}
     - target: {fileID: 8871199387345972965, guid: cc85d8d915ac52047840b1813ab0a5e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7290,7 +7305,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 40501991}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
