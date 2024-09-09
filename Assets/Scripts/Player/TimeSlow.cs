@@ -5,6 +5,7 @@ public class TimeSlow : MonoBehaviour
 {
     [SerializeField] private float slowTimer = 5f;
     [SerializeField] private TextMeshProUGUI slowText;
+    [SerializeField] private GameObject slowMoEffect;
     public bool timeSlowed;
 
     //Reference to game events
@@ -22,11 +23,12 @@ public class TimeSlow : MonoBehaviour
     {
         slowText.text = slowTimer.ToString("0.0");
 
-        //If the player presses space, the time slow event will be raised
-        if(Input.GetKeyDown("space") && timeSlowed == false && slowTimer > 0)
+        //If the player holds shift, the time slow event will be raised
+        if(Input.GetKeyDown(KeyCode.LeftShift) && timeSlowed == false && slowTimer > 0)
         {
             slowed.Raise();
             timeSlowed = true;
+            slowMoEffect.SetActive(true);
 
             Debug.Log("Time Slowed");
         }
@@ -37,11 +39,12 @@ public class TimeSlow : MonoBehaviour
             slowTimer -= Time.deltaTime;
         }
 
-        //When the slow timer reaches zero, the unslow event will be raised
-        if(slowTimer <= 0f && timeSlowed == true)
+        //When the slow timer reaches zero/ the player releases shift, the unslow event will be raised
+        if(slowTimer <= 0f || Input.GetKeyUp(KeyCode.LeftShift))
         {
             unslowed.Raise();
             timeSlowed = false;
+            slowMoEffect.SetActive(false);
 
             Debug.Log("Time Unslowed");
         }
