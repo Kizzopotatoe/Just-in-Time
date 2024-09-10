@@ -13,6 +13,15 @@ public class VolumeSettingsHandler : MonoBehaviour
     {
         LoadVolume();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SaveVolume();
+        }    
+    }
+
     public void UpdateMusicVolume(float volume)
     {
         audioMixer.SetFloat("MusicVolume", volume);
