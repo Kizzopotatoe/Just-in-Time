@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330, y: -267}
+  m_AnchoredPosition: {x: -330, y: -238}
   m_SizeDelta: {x: 252.068, y: 91.225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6178328
@@ -1270,14 +1270,14 @@ RectTransform:
   m_GameObject: {fileID: 180477895}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.82326, y: 0.82326, z: 0.82326}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 446131243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.4250016, y: 3}
+  m_AnchoredPosition: {x: -6.4250016, y: -56.000168}
   m_SizeDelta: {x: 947.15, y: 179.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &180477897
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chrono Kid
+  m_text: JUST IN TIME!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -1414,7 +1414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: 65.51}
+  m_AnchoredPosition: {x: 188, y: 52.510025}
   m_SizeDelta: {x: 305.139, y: 131.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192742887
@@ -3700,7 +3700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -188, y: 65.514}
+  m_AnchoredPosition: {x: -188, y: 52.514023}
   m_SizeDelta: {x: 305.139, y: 131.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566520136
@@ -5085,7 +5085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000091553, y: 249}
+  m_AnchoredPosition: {x: -0.000091553, y: 236}
   m_SizeDelta: {x: 305.139, y: 131.028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947329813
@@ -7986,7 +7986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1727309570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9073,14 +9073,14 @@ RectTransform:
   m_GameObject: {fileID: 1914138871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.82326, y: 0.82326, z: 0.82326}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 446131243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.4250016, y: -9.999916}
+  m_AnchoredPosition: {x: -6.4250016, y: -69}
   m_SizeDelta: {x: 947.15, y: 179.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914138873
@@ -9103,7 +9103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chrono Kid
+  m_text: JUST IN TIME!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
