@@ -45,6 +45,7 @@ public class PlayerGrab : MonoBehaviour
                 heldCivilians[0].SetActive(false);
                 currentlyHolding = 0;
                 droppedOff++;
+                civiliansRemaining--;
             }
             else if(currentlyHolding == 2)
             {
@@ -54,9 +55,9 @@ public class PlayerGrab : MonoBehaviour
                 currentlyHolding = 0;
 
                 droppedOff += 2;
+                civiliansRemaining -= 2;
             }
 
-            civiliansRemaining--;
             UpdateCivilianCounter();
         }
 
