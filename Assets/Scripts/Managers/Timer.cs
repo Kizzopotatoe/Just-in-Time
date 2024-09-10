@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
     public Slider slider;
     private bool timeSlowed;
+
+    [SerializeField] private EndSequence endingSequence;
 
     private void Start()
     {
@@ -67,8 +70,15 @@ public class Timer : MonoBehaviour
 
     void LevelFailed()
     {
-        GameManager.instance.levelFailedMenu.SetActive(true);
-        Time.timeScale = 0;
+        if(endingSequence != null)
+        {
+            endingSequence.VillainEndSequence();
+        }
+        else
+        {
+            GameManager.instance.levelFailedMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void TimeSlow()
