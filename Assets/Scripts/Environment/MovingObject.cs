@@ -13,10 +13,10 @@ public class MovingObject : MonoBehaviour
 
     public void TimeSlow()
     {
-        speed = 1;
+        speed = 0.7f;
     }
     public void TimeUnslow()
     {
-        speed = 3;
+        speed = 2f;
     }
 }
