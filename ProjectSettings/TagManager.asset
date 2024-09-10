@@ -7,6 +7,7 @@ TagManager:
   - Civilian
   - DropPoint
   - Minion
+  - RewindPoint
   layers:
   - Default
   - TransparentFX
