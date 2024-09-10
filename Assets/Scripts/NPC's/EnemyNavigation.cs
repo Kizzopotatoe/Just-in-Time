@@ -31,10 +31,10 @@ public class EnemyNavigation : MonoBehaviour
 
     public void TimeSlow()
     {
-        agent.speed = 1.1f;
+        agent.speed = 1.5f;
     }
     public void TimeUnslow()
     {
-        agent.speed = 3.1f;
+        agent.speed = 3.5f;
     }
 }

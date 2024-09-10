@@ -6809,6 +6809,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718809043}
   m_CullTransparentMesh: 1
+--- !u!1 &719637154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719637155}
+  m_Layer: 0
+  m_Name: Waypoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719637155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719637154}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.920002, y: 0, z: -23.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 821428232}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &732837416
 GameObject:
   m_ObjectHideFlags: 0
@@ -7015,6 +7046,7 @@ Transform:
   - {fileID: 1296032216}
   - {fileID: 535077396}
   - {fileID: 1258888909}
+  - {fileID: 719637155}
   m_Father: {fileID: 1597995457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
@@ -10607,7 +10639,7 @@ PrefabInstance:
     - target: {fileID: 4018534939334116495, guid: ec12c22114a47ef49a2d369df536ed09,
         type: 3}
       propertyPath: waypoints.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4018534939334116495, guid: ec12c22114a47ef49a2d369df536ed09,
         type: 3}
@@ -10624,6 +10656,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 1258888909}
+    - target: {fileID: 4018534939334116495, guid: ec12c22114a47ef49a2d369df536ed09,
+        type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 719637155}
     - target: {fileID: 4018534939334116495, guid: ec12c22114a47ef49a2d369df536ed09,
         type: 3}
       propertyPath: waypoints.Array.data[4]
