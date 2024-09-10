@@ -1,10 +1,23 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerGrab : MonoBehaviour
 {
     public int currentlyHolding = 0;        //How many civilians the player is currently holding
     public int droppedOff = 0;
     public GameObject[] heldCivilians;      //Reference to the civilian game objects
+
+    [SerializeField] private TextMeshProUGUI civilianCounter;
+    private int totalCivilians;
+    private int civiliansRemaining;
+
+    private void Start()
+    {
+        totalCivilians = GameObject.FindGameObjectsWithTag("Civilian").Length;
+        civiliansRemaining = totalCivilians;
+        UpdateCivilianCounter();
+
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,22 +38,32 @@ public class PlayerGrab : MonoBehaviour
     {
         //If the player collides with the drop point, they will drop off all the civilians
         //they are currently holding, and the counter will reduce to 0
-        if (other.gameObject.CompareTag("DropPoint") && currentlyHolding == 1)
+        if (other.gameObject.CompareTag("DropPoint"))
         {
-            heldCivilians[0].SetActive(false);
+            if(currentlyHolding == 1)
+            {
+                heldCivilians[0].SetActive(false);
+                currentlyHolding = 0;
+                droppedOff++;
+            }
+            else if(currentlyHolding == 2)
+            {
+                heldCivilians[0].SetActive(false);
+                heldCivilians[1].SetActive(false);
 
-            currentlyHolding = 0;
+                currentlyHolding = 0;
 
-            droppedOff++;
+                droppedOff += 2;
+            }
+
+            civiliansRemaining--;
+            UpdateCivilianCounter();
         }
-        if (other.gameObject.CompareTag("DropPoint") && currentlyHolding == 2)
-        {
-            heldCivilians[0].SetActive(false);
-            heldCivilians[1].SetActive(false);
 
-            currentlyHolding = 0;
+    }
 
-            droppedOff += 2;
-        }
+    private void UpdateCivilianCounter()
+    {
+        civilianCounter.text = civiliansRemaining.ToString();
     }
 }

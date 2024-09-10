@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     public Slider slider;
     private bool timeSlowed;
 
-    [SerializeField] private EndSequence endingSequence;
+    [SerializeField] private VillainManager villainManager;
 
     private void Start()
     {
@@ -70,9 +70,9 @@ public class Timer : MonoBehaviour
 
     void LevelFailed()
     {
-        if(endingSequence != null)
+        if(villainManager != null)
         {
-            endingSequence.VillainEndSequence();
+            villainManager.EndSequence();
         }
         else
         {

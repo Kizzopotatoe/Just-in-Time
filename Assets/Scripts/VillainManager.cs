@@ -2,27 +2,27 @@ using System.Collections;
 using UnityEngine;
 using Cinemachine;
 
-public class EndSequence : MonoBehaviour
+public class VillainManager : MonoBehaviour
 {
     [SerializeField] private GameObject villain;
     [SerializeField] private CinemachineVirtualCamera villainVirtualCamera;
     [SerializeField] private float moveDuration = 5f;
-    [SerializeField] private float yPositionToStop = 2.5f;
+    [SerializeField] private float yPositionToStop = 4f;
 
     [SerializeField] private GameObject lightningEffect;
 
-    private void Start()
+    private void Awake()
     {
         villain.SetActive(false);
         villainVirtualCamera.gameObject.SetActive(false);
     }
 
-    public void VillainEndSequence()
+    public void EndSequence()
     {
-        StartCoroutine(EndingSequence());
+        StartCoroutine(VillainSequence()); // called when time runs out
     }
 
-    IEnumerator EndingSequence()
+    IEnumerator VillainSequence()
     {
         villain.SetActive(true);
         villainVirtualCamera.gameObject.SetActive(true);

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PortalMaterial
+  m_Name: PortalMaterial 1
   m_Shader: {fileID: -6465566751694194690, guid: 567c21a1db0d2d5468410ce4eddef2c4,
     type: 3}
   m_Parent: {fileID: 0}
@@ -46,10 +46,10 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 3
-    - _Speed: 0.5
+    - _Speed: -0.5
     - _TwirlStrength: -10
     m_Colors:
-    - _Color: {r: 194.0117, g: 44.149113, b: 0, a: 1}
+    - _Color: {r: 1.4768367, g: 3.6565545, b: 44.72703, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6211922229625247568
 MonoBehaviour:
