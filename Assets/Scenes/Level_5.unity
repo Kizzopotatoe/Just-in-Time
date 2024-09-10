@@ -9712,7 +9712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a7ae0eb8131c2479392c765d0f2f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreToWin: 4
+  scoreToWin: 5
   playerGrab: {fileID: 0}
 --- !u!1 &1503238929
 GameObject:
