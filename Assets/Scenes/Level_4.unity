@@ -1163,8 +1163,8 @@ Transform:
   m_GameObject: {fileID: 82339723}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7386565, y: 0.9349227, z: 0.18334264}
-  m_LocalScale: {x: 6.4885936, y: 4.6999717, z: 0.6568273}
+  m_LocalPosition: {x: -0.97, y: 0.9349227, z: 0.18}
+  m_LocalScale: {x: 6.4885936, y: 4.6999717, z: 0.28699413}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 706656664}
@@ -8507,7 +8507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706656664}
   m_Layer: 0
-  m_Name: AutomaticDoor (1)
+  m_Name: Shutters (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8522,7 +8522,7 @@ Transform:
   m_GameObject: {fileID: 706656663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 2.460473, y: -0.72363067, z: 33.874}
+  m_LocalPosition: {x: 2.460473, y: -0.72363067, z: 34.560005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11974,7 +11974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129335092}
   m_Layer: 0
-  m_Name: AutomaticDoor
+  m_Name: Shutters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11989,7 +11989,7 @@ Transform:
   m_GameObject: {fileID: 1129335091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: -5.4287863, y: -0.72363067, z: 33.873997}
+  m_LocalPosition: {x: -5.4287863, y: -0.72363067, z: 34.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12065,8 +12065,8 @@ Transform:
   m_GameObject: {fileID: 1134529334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.636343, y: 0.9349227, z: 0.18340977}
-  m_LocalScale: {x: 6.7384768, y: 4.6999717, z: 0.6568273}
+  m_LocalPosition: {x: 10.82, y: 0.9349227, z: 0.18}
+  m_LocalScale: {x: 6.7384768, y: 4.6999717, z: 0.28699413}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1129335092}
@@ -18897,7 +18897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43fa9a94adb33a469e08fe3ca0c4487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 15
+  timeRemaining: 20
   timerText: {fileID: 1274713017}
   slider: {fileID: 164386695}
   villainManager: {fileID: 0}

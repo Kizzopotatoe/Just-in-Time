@@ -3520,7 +3520,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.411213, y: 0.4013691, z: -33.423363}
-  m_LocalScale: {x: 1, y: 4.5348415, z: 7.539699}
+  m_LocalScale: {x: 0.47415, y: 4.5348415, z: 7.539699}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 166193842}
@@ -11636,7 +11636,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.411213, y: 0.4013691, z: -56.423363}
-  m_LocalScale: {x: 1, y: 4.5348415, z: 7.539699}
+  m_LocalScale: {x: 0.47415, y: 4.5348415, z: 7.539699}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 166193842}
@@ -13743,7 +13743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43fa9a94adb33a469e08fe3ca0c4487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 15
+  timeRemaining: 20
   timerText: {fileID: 1274713017}
   slider: {fileID: 164386695}
   villainManager: {fileID: 0}

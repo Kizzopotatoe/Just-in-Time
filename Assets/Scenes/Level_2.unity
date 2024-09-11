@@ -14138,7 +14138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43fa9a94adb33a469e08fe3ca0c4487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 15
+  timeRemaining: 20
   timerText: {fileID: 1274713017}
   slider: {fileID: 164386695}
   villainManager: {fileID: 0}

@@ -14077,7 +14077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43fa9a94adb33a469e08fe3ca0c4487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 15
+  timeRemaining: 20
   timerText: {fileID: 1274713017}
   slider: {fileID: 164386695}
   villainManager: {fileID: 0}
@@ -16521,7 +16521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3482486582615700006}
   m_Layer: 0
-  m_Name: AutomaticDoor
+  m_Name: Shutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16907,7 +16907,7 @@ Transform:
   m_GameObject: {fileID: 258246799352987356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: 34.75749, y: -0.72363067, z: -26.695702}
+  m_LocalPosition: {x: 35.31, y: -0.72363067, z: -26.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17594,8 +17594,8 @@ Transform:
   m_GameObject: {fileID: 6266971370597109717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.8863435, y: 0.9349227, z: 0.18337584}
-  m_LocalScale: {x: 5.2388, y: 4.6999717, z: 0.6568273}
+  m_LocalPosition: {x: 7.12, y: 0.9349227, z: 0.18}
+  m_LocalScale: {x: 5.2388, y: 4.6999717, z: 0.3002489}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3482486582615700006}
@@ -17911,7 +17911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoint: {fileID: 5576927094182792745}
-  speed: 3
+  speed: 2
 --- !u!1 &8941047100015122794
 GameObject:
   m_ObjectHideFlags: 0
