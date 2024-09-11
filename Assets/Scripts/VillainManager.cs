@@ -14,7 +14,8 @@ public class VillainManager : MonoBehaviour
     [SerializeField] private float yPositionToStop = 4f;
 
     [Header("Effects")]
-    [SerializeField] private GameObject lightningEffect;
+    [SerializeField] private GameObject lightningEffectLoop;
+    [SerializeField] private GameObject onGroundLightningEffect;
 
     [Header("Flashing Lights")]
     [SerializeField] private GameObject lightsParentObject;
@@ -34,6 +35,7 @@ public class VillainManager : MonoBehaviour
         villain.SetActive(false);
         villainVirtualCamera.gameObject.SetActive(false);
         lightsParentObject.SetActive(false);
+        lightningEffectLoop.SetActive(false);
 
         if (lights.Length == 0)
         {
@@ -44,6 +46,7 @@ public class VillainManager : MonoBehaviour
     public void EndSequence()
     {
         player.SetActive(false);
+        lightningEffectLoop.SetActive(true);
         StartCoroutine(VillainSequence()); // called when time runs out
         FlashLight();
     }
@@ -70,7 +73,7 @@ public class VillainManager : MonoBehaviour
         villain.transform.position = targetPosition;
 
         // Lightning strikes - building destroyed
-        lightningEffect.SetActive(true);
+        onGroundLightningEffect.SetActive(true);
         yield return new WaitForSeconds(5f); // replace with conditional
         // when destroying is done then display game over screen
         GameManager.instance.levelFailedMenu.SetActive(true);
