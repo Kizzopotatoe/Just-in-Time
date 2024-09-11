@@ -278,7 +278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slowing time costs battery, but can be recharged by absorbing storm clouds
+  m_text: Slowing time costs battery, but can be recharged by absorbing storm clouds.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOLD SHIFT TO SLOW TIME
+  m_text: HOLD SHIFT TO SLOW TIME.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -4770,8 +4770,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MAKE GOOD USE TO THESE ABILITIES TO PLAN YOUR ROUTE. NOT EVERY LEVEL CAN
-    BE BEATEN WHEN STARTING AT THE ENTRANCE
+  m_text: MAKE GOOD USE TO THESE ABILITIES TO PLAN YOUR ROUTE. THERE IS NO LIMIT
+    TO REWINDING SO USE IT OFTEN.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -5853,7 +5853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU CAN ONLY CARRY 2 HOSTAGES AT ONE TIME
+  m_text: YOU CAN ONLY CARRY 2 HOSTAGES AT ONE TIME.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -11242,7 +11242,7 @@ Transform:
   m_GameObject: {fileID: 1557917311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.96438, y: 106.60652, z: -113.56612}
+  m_LocalPosition: {x: -38.91, y: 106.60652, z: -113.56612}
   m_LocalScale: {x: 22.755, y: 1, z: 10.231}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14142,7 +14142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: IF YOU GET STUCK, HOLD R TO REWIND TIME AROUND YOU
+  m_text: IF YOU GET STUCK, HOLD R TO REWIND TIME AROUND YOU.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
@@ -14768,7 +14768,7 @@ Transform:
   m_GameObject: {fileID: 1947411986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.244376, y: 106.94652, z: -73.87612}
+  m_LocalPosition: {x: -12.5, y: 106.94652, z: -73.87612}
   m_LocalScale: {x: 4.8356876, y: 1, z: 2.0293143}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16753,7 +16753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If a storm cloud kills a hostage, use rewind to save them
+  m_text: If a storm cloud kills a hostage, use rewind to save them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0af65761878f3ac4b9f23f4d62f25d3e, type: 2}
   m_sharedMaterial: {fileID: 2097021996968891558, guid: 0af65761878f3ac4b9f23f4d62f25d3e,
