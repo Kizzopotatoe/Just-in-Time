@@ -16,6 +16,7 @@ public class VillainManager : MonoBehaviour
     [Header("Effects")]
     [SerializeField] private GameObject lightningEffectLoop;
     [SerializeField] private GameObject onGroundLightningEffect;
+    [SerializeField] private GameObject forceFieldEffect;
 
     [Header("Flashing Lights")]
     [SerializeField] private GameObject lightsParentObject;
@@ -74,7 +75,8 @@ public class VillainManager : MonoBehaviour
 
         // Lightning strikes - building destroyed
         onGroundLightningEffect.SetActive(true);
-        yield return new WaitForSeconds(5f); // replace with conditional
+        forceFieldEffect.SetActive(true);
+        yield return new WaitForSeconds(3f);
         // when destroying is done then display game over screen
         GameManager.instance.levelFailedMenu.SetActive(true);
         Time.timeScale = 0;
