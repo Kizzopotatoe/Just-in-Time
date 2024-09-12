@@ -700,7 +700,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1495072049}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSettingsHandler, Assembly-CSharp
         m_MethodName: UpdateSFXVolume
         m_Mode: 0
@@ -2176,7 +2176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0220eabf53c8644b0477abd5007b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 2091042184}
 --- !u!1 &220186681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,7 +2407,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 198006067}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -7288,7 +7288,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 198006067}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -7300,7 +7300,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1495072049}
+      - m_Target: {fileID: 1658049160}
         m_TargetAssemblyTypeName: VolumeSettingsHandler, Assembly-CSharp
         m_MethodName: SaveVolume
         m_Mode: 1
@@ -7980,7 +7980,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1495072049}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSettingsHandler, Assembly-CSharp
         m_MethodName: UpdateMusicVolume
         m_Mode: 0
@@ -8109,7 +8109,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 198006067}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -12883,6 +12883,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449827621}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1451307498 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4482275146320640318, guid: cc85d8d915ac52047840b1813ab0a5e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 417752585024611780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1461033007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13534,7 +13540,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495072048}
-  - component: {fileID: 1495072049}
   m_Layer: 5
   m_Name: VolumeSettings
   m_TagString: Untagged
@@ -13563,21 +13568,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000021725, y: -300.93}
   m_SizeDelta: {x: 500.9, y: 254.492}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1495072049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495072047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81086143ced6fb242bd28c1fafa19474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 20a43d81b661b3e4397b04a1cc838315, type: 2}
-  musicSlider: {fileID: 917979546}
-  sfxSlider: {fileID: 53718686}
 --- !u!1 &1512533069
 GameObject:
   m_ObjectHideFlags: 0
@@ -14861,6 +14851,7 @@ GameObject:
   - component: {fileID: 1658049159}
   - component: {fileID: 1658049158}
   - component: {fileID: 1658049157}
+  - component: {fileID: 1658049160}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -14961,6 +14952,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1658049160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658049155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81086143ced6fb242bd28c1fafa19474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 20a43d81b661b3e4397b04a1cc838315, type: 2}
+  musicSlider: {fileID: 917979546}
+  sfxSlider: {fileID: 53718686}
 --- !u!1 &1670232478
 GameObject:
   m_ObjectHideFlags: 0
@@ -18899,6 +18905,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2114419710}
     m_Modifications:
+    - target: {fileID: 4665130475405173253, guid: cc85d8d915ac52047840b1813ab0a5e7,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1451307498}
     - target: {fileID: 5019979685710105260, guid: cc85d8d915ac52047840b1813ab0a5e7,
         type: 3}
       propertyPath: m_Name
