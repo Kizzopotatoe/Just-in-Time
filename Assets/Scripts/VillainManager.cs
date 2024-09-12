@@ -17,6 +17,7 @@ public class VillainManager : MonoBehaviour
     [SerializeField] private GameObject lightningEffectLoop;
     [SerializeField] private GameObject onGroundLightningEffect;
     [SerializeField] private GameObject forceFieldEffect;
+    [SerializeField] private GameObject lightningBoltEffect;
 
     [Header("Flashing Lights")]
     [SerializeField] private GameObject lightsParentObject;
@@ -37,6 +38,8 @@ public class VillainManager : MonoBehaviour
         villainVirtualCamera.gameObject.SetActive(false);
         lightsParentObject.SetActive(false);
         lightningEffectLoop.SetActive(false);
+        lightningBoltEffect.SetActive(false);
+        onGroundLightningEffect.SetActive(false);
 
         if (lights.Length == 0)
         {
@@ -48,6 +51,7 @@ public class VillainManager : MonoBehaviour
     {
         player.SetActive(false);
         lightningEffectLoop.SetActive(true);
+        lightningBoltEffect.SetActive(true);
         StartCoroutine(VillainSequence()); // called when time runs out
         FlashLight();
     }

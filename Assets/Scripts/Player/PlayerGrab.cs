@@ -7,7 +7,9 @@ public class PlayerGrab : MonoBehaviour
     public int droppedOff = 0;
     public GameObject[] heldCivilians;      //Reference to the civilian game objects
 
-    [SerializeField] private TextMeshProUGUI civilianCounter;
+    [SerializeField] private TextMeshProUGUI civiliansRemainingText; // on the car gameobject - world space canvas
+    [SerializeField] private TextMeshProUGUI civiliansSavedTextWhenComplete;
+    [SerializeField] private TextMeshProUGUI civiliansSavedTextWhenFail;
     private int totalCivilians;
     private int civiliansRemaining;
 
@@ -65,6 +67,8 @@ public class PlayerGrab : MonoBehaviour
 
     private void UpdateCivilianCounter()
     {
-        civilianCounter.text = civiliansRemaining.ToString();
+        civiliansRemainingText.text = civiliansRemaining.ToString();
+        civiliansSavedTextWhenComplete.text = droppedOff.ToString();
+        civiliansSavedTextWhenFail.text = droppedOff.ToString();
     }
 }

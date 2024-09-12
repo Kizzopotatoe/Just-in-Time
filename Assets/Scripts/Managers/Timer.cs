@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float timeRemaining = 5f;
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI timerTextWhenCompleted; // text that shows on the win screen
     public Slider slider;
     private bool timeSlowed;
 
@@ -61,11 +62,13 @@ public class Timer : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeRemaining % 60); // Get the remainder for seconds
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerTextWhenCompleted.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
     private void ShowSecondsOnly()
     {
         timerText.text = timeRemaining.ToString("0.0");
+        timerTextWhenCompleted.text = timeRemaining.ToString("0.0");
     }
 
     void LevelFailed()
