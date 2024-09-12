@@ -7,9 +7,13 @@ public class EnemyNavigation : MonoBehaviour
     [SerializeField] private float checkDistance = 0.5f;
     public Transform target;
 
+    [Header("Effects"), HideInInspector]
+    private MinionEffects minionEffects;
+
     // Start is called before the first frame update
     void Start()
     {
+        minionEffects = GetComponent<MinionEffects>();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = 3.1f;
     }
@@ -24,6 +28,8 @@ public class EnemyNavigation : MonoBehaviour
         if(Vector3.Distance(transform.position, target.position) < checkDistance)
         {
             Debug.Log("Civilian Reached");
+            minionEffects.SpawnBlastEffect();
+
             Destroy(target.gameObject);
             Destroy(this.gameObject);
         }

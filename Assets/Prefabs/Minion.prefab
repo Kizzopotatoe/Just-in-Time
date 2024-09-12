@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5508511776325781687}
   - component: {fileID: 4968284251371489794}
   - component: {fileID: 9025700366714223285}
+  - component: {fileID: 4452699818166605022}
   m_Layer: 0
   m_Name: Minion
   m_TagString: Minion
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkDistance: 1
   target: {fileID: 0}
+  hasReachedCivilian: 0
 --- !u!114 &4968284251371489794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +155,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4452699818166605022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697269974394044255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3554477b291d7499d8f98a835fdf3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blastEffectPrefab: {fileID: 3243002002730253455, guid: 612519e1298eaf74a95fd5266413f98a,
+    type: 3}
 --- !u!1 &931321035082687852
 GameObject:
   m_ObjectHideFlags: 0
