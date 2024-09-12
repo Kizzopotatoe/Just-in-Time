@@ -8,7 +8,7 @@ public class LevelMenu : MonoBehaviour
 
     private void Awake()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 0);
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
@@ -24,10 +24,5 @@ public class LevelMenu : MonoBehaviour
         // how scenes are named
         string levelName = "Level_" + levelId;
         SceneManager.LoadScene(levelName);
-    }
-
-    public void ResetGame()
-    {
-        
     }
 }
