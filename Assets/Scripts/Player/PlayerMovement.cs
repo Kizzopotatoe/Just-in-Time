@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody myRigidbody;
     private Vector3 velocity;
 
+    public Animator animator;
+
     private void Awake()
     {
         myRigidbody = GetComponent<Rigidbody>();
@@ -20,6 +22,15 @@ public class PlayerMovement : MonoBehaviour
         velocity = direction * moveSpeed;
 
         transform.forward = Vector3.Slerp(transform.forward, direction, Time.deltaTime * rotateSpeed);
+
+        if(inputVector.x != 0 || inputVector.z != 0)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
     }
 
     private void FixedUpdate()

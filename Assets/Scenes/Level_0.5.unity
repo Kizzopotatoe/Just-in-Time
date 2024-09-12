@@ -16984,6 +16984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4224506694906974870}
+  - component: {fileID: 4224506694906974871}
   m_Layer: 0
   m_Name: GAMEJAMHERO - CivillianM(T-Pose)
   m_TagString: Untagged
@@ -17210,6 +17211,27 @@ Transform:
   - {fileID: 8570390465172402690}
   m_Father: {fileID: 8456881041497771878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4224506694906974871
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597152176167766060}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3daf8b6e6efa68498e553e2ab271cb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &4350263018386687161
 Transform:
   m_ObjectHideFlags: 0
@@ -18420,6 +18442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7534591001272892503}
+  - component: {fileID: 7534591001272892504}
   m_Layer: 0
   m_Name: GAMEJAMHERO - CivillianM(T-Pose)
   m_TagString: Untagged
@@ -18556,6 +18579,27 @@ Transform:
   - {fileID: 2648235692239871171}
   m_Father: {fileID: 2840830649621602727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7534591001272892504
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195606740586063597}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3daf8b6e6efa68498e553e2ab271cb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &7642166035925732307
 Transform:
   m_ObjectHideFlags: 0
