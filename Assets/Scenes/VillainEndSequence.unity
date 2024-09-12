@@ -5617,12 +5617,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117083833}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.081, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2540038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1563176926}
+  m_Father: {fileID: 543796356}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &117083835
 ParticleSystemRenderer:
@@ -5711,7 +5711,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -10511,7 +10511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.875122, y: -2.335266}
+  m_AnchoredPosition: {x: 2.875122, y: -2.335205}
   m_SizeDelta: {x: 28.8055, y: 28.1353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142686673
@@ -12194,7 +12194,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -12221,7 +12221,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6094107, y: 0.001847187, z: -0.0029222239, w: 0.7928472}
-  m_LocalPosition: {x: 5.585304, y: 81.454, z: -9.739214}
+  m_LocalPosition: {x: -20.0179, y: 39.654, z: -10.320119}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12919,7 +12919,7 @@ PrefabInstance:
     - target: {fileID: 4826647975517220429, guid: 0ce63bc062b7da641b0d30b4d60ea249,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5057221738039449004, guid: 0ce63bc062b7da641b0d30b4d60ea249,
         type: 3}
@@ -13046,6 +13046,21 @@ PrefabInstance:
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outWeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7063682572567531718, guid: 0ce63bc062b7da641b0d30b4d60ea249,
+        type: 3}
+      propertyPath: SubModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063682572567531718, guid: 0ce63bc062b7da641b0d30b4d60ea249,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063682572567531718, guid: 0ce63bc062b7da641b0d30b4d60ea249,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 543796355}
     - target: {fileID: 7386848450280418950, guid: 0ce63bc062b7da641b0d30b4d60ea249,
         type: 3}
       propertyPath: VelocityModule.z.scalar
@@ -13111,10 +13126,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 0
       addedObject: {fileID: 539483563}
-    - targetCorrespondingSourceObject: {fileID: 3689606408461439722, guid: 0ce63bc062b7da641b0d30b4d60ea249,
+    - targetCorrespondingSourceObject: {fileID: 8623999486550222396, guid: 0ce63bc062b7da641b0d30b4d60ea249,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 117083834}
+      addedObject: {fileID: 543796356}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce63bc062b7da641b0d30b4d60ea249, type: 3}
 --- !u!1 &365587512
@@ -14221,7 +14236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.2042236, y: -1.6210327}
+  m_AnchoredPosition: {x: 4.2042236, y: -1.6209717}
   m_SizeDelta: {x: 25.1078, y: 23.1663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498823325
@@ -14458,7 +14473,7 @@ GameObject:
   - component: {fileID: 543796355}
   - component: {fileID: 543796354}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: ForceField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14485,7 +14500,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e892a193aae99049a42ddd4f6e12449, type: 2}
+  - {fileID: 2100000, guid: 318ef4960c158e74db6f86a53e28ac6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14544,14 +14559,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543796353}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 4
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -14559,7 +14574,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -14618,9 +14633,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 5
-      minScalar: 4
+      minMaxState: 0
+      scalar: 4
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14790,7 +14805,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 80
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15483,7 +15498,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 3
+        scalar: 1
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -15537,7 +15552,7 @@ ParticleSystem:
       repeatInterval: 0.01
       probability: 1
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -15547,23 +15562,59 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
+          time: 0.00878738
+          value: 0.011695921
           inSlope: 0
-          outSlope: 1
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.1544972
+          value: 0.14882326
+          inSlope: 0.12653178
+          outSlope: 0.12653178
+          tangentMode: 0
+          weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.33333334
+          outWeight: 0.2989199
+        - serializedVersion: 3
+          time: 0.37449735
+          value: 0.15571664
+          inSlope: 0.030293364
+          outSlope: 0.030293364
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.4121393
+        - serializedVersion: 3
+          time: 0.5630123
+          value: 0.069643624
+          inSlope: 0.5446781
+          outSlope: 0.5446781
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33848533
+          outWeight: 0.8038706
+        - serializedVersion: 3
+          time: 0.64968866
+          value: 0.98964894
+          inSlope: 0.15280628
+          outSlope: 0.15280628
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.25248513
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0.122771725
+          outSlope: 0.122771725
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.21964063
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -18372,10 +18423,10 @@ ParticleSystem:
     primitives: []
   SubModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     subEmitters:
     - serializedVersion: 3
-      emitter: {fileID: 0}
+      emitter: {fileID: 117083836}
       type: 0
       properties: 0
       emitProbability: 1
@@ -19325,12 +19376,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543796353}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 20.86005, y: 39.67104, z: -51.867355}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.37000275, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 117083834}
+  m_Father: {fileID: 1428338521}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &547451225
 GameObject:
@@ -25552,6 +25604,7 @@ MonoBehaviour:
   yPositionToStop: 7
   lightningEffectLoop: {fileID: 620501384}
   onGroundLightningEffect: {fileID: 1428338520}
+  forceFieldEffect: {fileID: 543796353}
   lightsParentObject: {fileID: 74189307}
   lights:
   - {fileID: 1909688288}
@@ -28539,6 +28592,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 363955811}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1428338521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8623999486550222396, guid: 0ce63bc062b7da641b0d30b4d60ea249,
+    type: 3}
+  m_PrefabInstance: {fileID: 363955811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1436957191
 GameObject:
   m_ObjectHideFlags: 0
@@ -29247,12 +29306,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00003781, y: 330}
   m_SizeDelta: {x: 684.851, y: 185.01}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1563176926 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3689606408461439722, guid: 0ce63bc062b7da641b0d30b4d60ea249,
-    type: 3}
-  m_PrefabInstance: {fileID: 363955811}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1573067950
 GameObject:
   m_ObjectHideFlags: 0
@@ -53282,4 +53335,3 @@ SceneRoots:
   - {fileID: 291728331}
   - {fileID: 1451791062}
   - {fileID: 815018677}
-  - {fileID: 543796356}
