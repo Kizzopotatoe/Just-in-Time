@@ -1,16 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class MinionEffects : MonoBehaviour
 {
+    [Header("Blast Effect")]
     [SerializeField] private GameObject blastEffectPrefab;
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SpawnBlastEffect();
-        }
-    }
 
     public void SpawnBlastEffect()
     {
