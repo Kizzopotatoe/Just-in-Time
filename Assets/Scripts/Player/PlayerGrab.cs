@@ -14,7 +14,8 @@ public class PlayerGrab : MonoBehaviour
     private int totalCivilians;
     private int civiliansRemaining;
 
-    public AudioSource source;
+    public AudioSource ding;
+    public AudioSource bump;
 
     private void Start()
     {
@@ -32,8 +33,9 @@ public class PlayerGrab : MonoBehaviour
             if(currentlyHolding >= 2) return;
 
             Destroy(collision.gameObject);
-
             heldCivilians[currentlyHolding].SetActive(true);
+
+            bump.Play();
 
             currentlyHolding++;
         }
@@ -51,7 +53,7 @@ public class PlayerGrab : MonoBehaviour
 
                 currentlyHolding = 0;
                 
-                source.Play();
+                ding.Play();
 
                 droppedOff++;
                 civiliansRemaining--;
@@ -63,7 +65,7 @@ public class PlayerGrab : MonoBehaviour
 
                 currentlyHolding = 0;
 
-                source.Play();
+                ding.Play();
 
                 droppedOff += 2;
                 civiliansRemaining -= 2;
