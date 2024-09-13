@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ForceFieldShader
+  m_Name: Player_ForceField
   m_Shader: {fileID: -6465566751694194690, guid: fefa3f941b363884e8c6521c5aeebcdb,
     type: 3}
   m_Parent: {fileID: 0}
@@ -55,13 +55,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.5
-    - _Fresnel_Power: 0.35
+    - _Fill: 0.59
+    - _Fresnel_Power: 2
     - _Offset: 0.6
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scroll_Speed: 0.05
+    - _Scroll_Speed: 0.1
     m_Colors:
-    - _Emission: {r: 0, g: 0.3574257, b: 16, a: 1}
-    - _Tiling: {r: 3, g: 3, b: 0, a: 0}
+    - _Emission: {r: 1.741101, g: 0, b: 0, a: 1}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

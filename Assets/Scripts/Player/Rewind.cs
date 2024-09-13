@@ -8,8 +8,12 @@ public class Rewind : MonoBehaviour
     private float timetoHold = 5f;
     public AudioSource source;
 
+    private PlayerEffects playerEffects;
+
     void Awake()
     {
+        playerEffects = GetComponent<PlayerEffects>();
+
         rewindPoint = GameObject.FindGameObjectWithTag("RewindPoint");
 
         this.transform.position = rewindPoint.transform.position;
@@ -33,6 +37,7 @@ public class Rewind : MonoBehaviour
         if(Input.GetKey(KeyCode.R))
         {
             heldTime+=0.1f;
+
         }
         if(Input.GetKeyUp(KeyCode.R) && heldTime < timetoHold)
         {
@@ -45,6 +50,7 @@ public class Rewind : MonoBehaviour
 
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex);
+            playerEffects.RewindFinishEffect();
         }
     }
 }

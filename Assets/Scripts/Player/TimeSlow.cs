@@ -18,6 +18,13 @@ public class TimeSlow : MonoBehaviour
     public GameEvent slowed;
     public GameEvent unslowed;
 
+    private PlayerEffects playerEffects;
+
+    private void Awake()
+    {
+        playerEffects = GetComponent<PlayerEffects>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +43,8 @@ public class TimeSlow : MonoBehaviour
         //If the player holds shift, the time slow event will be raised
         if(Input.GetKeyDown(KeyCode.LeftShift) && timeSlowed == false && slowTimer > 0)
         {
+            playerEffects.SlowMoEffect();
+
             slowed.Raise();
             timeSlowed = true;
             slowMoEffect.SetActive(true);
@@ -52,6 +61,8 @@ public class TimeSlow : MonoBehaviour
         //When the slow timer reaches zero/ the player releases shift, the unslow event will be raised
         if(slowTimer <= 0f || Input.GetKeyUp(KeyCode.LeftShift))
         {
+            playerEffects.ReverseSlowMo();
+
             unslowed.Raise();
             timeSlowed = false;
             slowMoEffect.SetActive(false);

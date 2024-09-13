@@ -1,16 +1,19 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerEffects : MonoBehaviour
 {
     [Header("Effects")]
     [SerializeField] private GameObject pickupEffectPrefab;
+    [SerializeField] private GameObject rewindFinishEffectPrefab;
+    [SerializeField] private GameObject rippleEffectPrefab;
 
     private SkinnedMeshRenderer meshRenderer;
     [SerializeField] private Material currentMaterial;
     [SerializeField] private Material outlineMaterial;
-    [SerializeField] private float transitionDuration = 1f;
+    [SerializeField] private float pickupMaterialTransitionDuration = 1f;
+    [SerializeField] private float slowMoMaterialTransitionDuration = 5f;
 
     private void Awake()
     {
@@ -22,7 +25,7 @@ public class PlayerEffects : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Minion"))
         {
-            StartCoroutine(SmoothMaterialChange(transitionDuration));
+            StartCoroutine(FlashMaterialChange(pickupMaterialTransitionDuration));
             SpawnPickUpEffect();
         }
     }
@@ -33,7 +36,14 @@ public class PlayerEffects : MonoBehaviour
         Destroy(pickupEffect, 1f);
     }
 
-    private IEnumerator  SmoothMaterialChange(float duration)
+    public void RewindFinishEffect()
+    {
+        GameObject rewindFinishEffect = Instantiate(rewindFinishEffectPrefab, transform.position, Quaternion.identity);
+        DontDestroyOnLoad(rewindFinishEffect);
+        Destroy(rewindFinishEffect, 1f);
+    }
+
+    private IEnumerator  FlashMaterialChange(float duration)
     {
         // Step 1: Switch to the outline material instantly
         meshRenderer.material = outlineMaterial;
@@ -57,4 +67,15 @@ public class PlayerEffects : MonoBehaviour
         // Ensure the final material is set to the original one at the end of the transition
         meshRenderer.material = currentMaterial;
     }
+
+    public void SlowMoEffect()
+    {
+        meshRenderer.material = outlineMaterial;
+    }
+
+    public void ReverseSlowMo()
+    {
+        meshRenderer.material = currentMaterial;
+    }
+
 }

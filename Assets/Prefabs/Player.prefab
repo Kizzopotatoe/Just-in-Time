@@ -2264,7 +2264,7 @@ MonoBehaviour:
     type: 3}
   currentMaterial: {fileID: 2100000, guid: bdc951bee170392479ed6a2887352939, type: 2}
   outlineMaterial: {fileID: 2100000, guid: cd5f0ab50574d6e45aafa692ee94756a, type: 2}
-  transitionDuration: 1
+  transitionDuration: 0.6
 --- !u!1 &5078289890586708237
 GameObject:
   m_ObjectHideFlags: 0
