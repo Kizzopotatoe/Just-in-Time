@@ -56631,6 +56631,7 @@ GameObject:
   - component: {fileID: 3938984790537215645}
   - component: {fileID: 6673561398508007347}
   - component: {fileID: 4455881778537026858}
+  - component: {fileID: 6673561398508007348}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -57937,6 +57938,7 @@ GameObject:
   - component: {fileID: 7946652438213710739}
   - component: {fileID: 1884090367720345324}
   - component: {fileID: 1862611050464110862}
+  - component: {fileID: 7946652438213710740}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -58251,6 +58253,7 @@ GameObject:
   - component: {fileID: 7470567543676247588}
   - component: {fileID: 404312938496486448}
   - component: {fileID: 5660414366939718566}
+  - component: {fileID: 7470567543676247589}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -58575,6 +58578,7 @@ GameObject:
   - component: {fileID: 5673603071298024653}
   - component: {fileID: 4963525753096821583}
   - component: {fileID: 604299561456585519}
+  - component: {fileID: 5673603071298024654}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -58817,6 +58821,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 372415877113758897}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &5673603071298024654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302681921090813983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &5729166243216917901
 Transform:
   m_ObjectHideFlags: 0
@@ -59120,6 +59145,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348230854536606327}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6673561398508007348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348230854536606327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0.00000011920929}
 --- !u!4 &6692797691866687282
 Transform:
   m_ObjectHideFlags: 0
@@ -59480,6 +59526,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 372415877113758897}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &7470567543676247589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426462169482807503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0}
 --- !u!1 &7494000541920575990
 GameObject:
   m_ObjectHideFlags: 0
@@ -59615,6 +59682,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 372415877113758897}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &7946652438213710740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603565691658294735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0}
 --- !u!4 &7957708560823757432
 Transform:
   m_ObjectHideFlags: 0

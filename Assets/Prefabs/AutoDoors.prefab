@@ -255,7 +255,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 7584805926620773693}
   - {fileID: 5793985890988699978}
-  speed: 30
+  speed: 25
   checkDistance: 0.05
   invisibleWall: {fileID: 4156282997345627578}
 --- !u!114 &8213827666987757631
@@ -598,7 +598,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 468918413975063138}
   - {fileID: 3216022091823719918}
-  speed: 30
+  speed: 25
   checkDistance: 0.05
   invisibleWall: {fileID: 7545731779213147561}
 --- !u!114 &6207348478581755904

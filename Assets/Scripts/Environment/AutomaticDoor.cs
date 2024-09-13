@@ -41,12 +41,12 @@ public class AutomaticDoor : MonoBehaviour
 
     public void TimeSlow()
     {
-        speed = 10;
+        speed = 5;
         invisibleWall.SetActive(false);
     }
     public void TimeUnslow()
     {
-        speed = 30;
+        speed = 25;
         invisibleWall.SetActive(true);
     }
 }
