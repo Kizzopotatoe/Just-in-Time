@@ -10,8 +10,11 @@ public class PlayerGrab : MonoBehaviour
     [SerializeField] private TextMeshProUGUI civiliansRemainingText; // on the car gameobject - world space canvas
     [SerializeField] private TextMeshProUGUI civiliansSavedTextWhenComplete;
     [SerializeField] private TextMeshProUGUI civiliansSavedTextWhenFail;
+
     private int totalCivilians;
     private int civiliansRemaining;
+
+    public AudioSource source;
 
     private void Start()
     {
@@ -45,7 +48,11 @@ public class PlayerGrab : MonoBehaviour
             if(currentlyHolding == 1)
             {
                 heldCivilians[0].SetActive(false);
+
                 currentlyHolding = 0;
+                
+                source.Play();
+
                 droppedOff++;
                 civiliansRemaining--;
             }
@@ -55,6 +62,8 @@ public class PlayerGrab : MonoBehaviour
                 heldCivilians[1].SetActive(false);
 
                 currentlyHolding = 0;
+
+                source.Play();
 
                 droppedOff += 2;
                 civiliansRemaining -= 2;
