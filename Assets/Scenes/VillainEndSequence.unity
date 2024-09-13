@@ -5143,45 +5143,6 @@ PrefabInstance:
       propertyPath: civiliansSavedTextWhenComplete
       value: 
       objectReference: {fileID: 1340555511}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 449511666}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: globalVolume
-      value: 
-      objectReference: {fileID: 832575518}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: rewindEffect
-      value: 
-      objectReference: {fileID: 449511666}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: rippleEffectPrefab
-      value: 
-      objectReference: {fileID: 6614793625575714324, guid: cf4fe8274c8904743b9a6b23e517a5f7,
-        type: 3}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: rewindEndtEffectPrefab
-      value: 
-      objectReference: {fileID: 4388593381092654242, guid: 973271af383455d4a8bf4b72fe674cf5,
-        type: 3}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: rewindStartEffectPrefab
-      value: 
-      objectReference: {fileID: 4388593381092654242, guid: ff5b5e29ab56e814dac056519462cf8b,
-        type: 3}
-    - target: {fileID: 6439724037058192772, guid: cc85d8d915ac52047840b1813ab0a5e7,
-        type: 3}
-      propertyPath: rewindFinishEffectPrefab
-      value: 
-      objectReference: {fileID: 655015057380516088, guid: f273742f4dbf9f046827a847b6ba8176,
-        type: 3}
     - target: {fileID: 8324716718709007383, guid: cc85d8d915ac52047840b1813ab0a5e7,
         type: 3}
       propertyPath: slider
